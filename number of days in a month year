@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //getting year as input to check if it is leap or not 
+    int year,temp;
+    cout<<"enter the year:";
+    cin>>year;
+    if (year%4==0 ){
+        temp=1;
+    
+        cout<<"it is a leap year"<<endl;
+    }else {
+       temp=0;
+       cout<<"it is not a leap year"<<endl;
+    }
+    //getting month
+    int mon;
+    cout<<"enter month:";
+    cin>>mon;
+    if (mon==1 || mon==3 || mon==5 || mon==7 || mon==8 || mon==10 ||mon==12){
+            cout<<"it has 31 days";
+    }
+    else if (mon==2 && temp==1){
+            cout<<"it has 29 days";
+        
+    }else if(mon==2 && temp==0){
+        cout<<"it has 28 days";
+    }
+    else {
+        cout<<"it has 30 days";
+    }
+    
+    return 0;
+}
