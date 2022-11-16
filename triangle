@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //get the values for three sides of a triangle
+    int a,b,c;
+    cout<<"enter the value of side1:";
+    cin>>a;
+    cout<<"enter the value of side2:";
+    cin>>b;
+    cout<<"enter the value of side3:";
+    cin>>c;
+    if (a==b && b==c){
+        cout<<"It is an equilateral triangle";
+        
+    }
+    else if (a==b || b==c || c==a){
+        cout<<"It is an isocelous triangle";
+        
+    }else{
+        cout<<"It is an scalene triangle";
+    }
+    
+
+    return 0;
+}
