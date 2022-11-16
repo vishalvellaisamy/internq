@@ -1,0 +1,21 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{  
+    int a,r,n;
+    int gp;
+    int temp;
+   //gp of nth term
+   cout<<"enter A:";
+   cin>>a;
+   cout<<"enter R:";
+   cin>>r;
+   cout<<"enter N:";
+   cin>>n;
+   gp=a*pow(r,n-1);
+   cout<<"the gp for nth term:"<<gp;
+   return 0;
+    
+}
