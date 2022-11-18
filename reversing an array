@@ -1,0 +1,15 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main()
+{  
+    int ar[10]={1,2,3,4,5,6,7,8,9};
+    //int temp=ar.length();
+    int len=sizeof(ar)/sizeof(ar[0]);
+    for(int i=len-1;i>=0;i--){
+        cout<<ar[i];
+    }
+    return 0;
+}
