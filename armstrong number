@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"enter any number:";
+    cin>>n;
+    int num=n;
+    int rem,arm=0;
+    while(n!=0){
+    rem=n%10;
+    arm=arm+(rem*rem*rem);
+    n/=10;
+    }
+    if (num==arm){
+        cout<<"entered num:"<<num<<endl;
+        cout<<"armstrong num:"<<arm<<endl;
+        cout<<"it is an armstrong number";
+    }else{
+         cout<<"entered num:"<<num<<endl;
+        cout<<"armstrong num:"<<arm<<endl;
+        cout<<"it is not an armstrong number";
+    }
+    
+    
+
+    return 0;
+}
