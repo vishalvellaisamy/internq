@@ -1,0 +1,22 @@
+#include <iostream>
+#include<cstring>
+
+using namespace std;
+
+
+int main()
+{
+    string temp;
+    int count=0;
+    cout<<"Enter any string:";
+    cin>>temp;
+    int len=temp.length();
+    for (int i=0;i<len;i++){
+        if (temp[i]=='a'|| temp[i]=='b'||temp[i]=='c'|| temp[i]=='d'||temp[i]=='e'|| temp[i]=='f'||temp[i]=='g'|| temp[i]=='h'||temp[i]=='i'|| temp[i]=='j'||temp[i]=='k'||
+        temp[i]=='l'|| temp[i]=='m'||temp[i]=='n'|| temp[i]=='o'){
+            count+=1;
+        }
+    }
+    cout<<"the total count of alphabet:"<<count;
+    return 0;
+}
