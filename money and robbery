@@ -1,0 +1,23 @@
+
+int main()
+{
+    int n;//number of houses in a row in a street
+    int k;//money robbed from each house
+    int temp;//number of houses that can be robbed
+    cout<<"enter n:";
+    cin>>n;
+    cout<<"enter k:";
+    cin>>k;
+    while(n>0){
+        if(n%2==0){
+            temp=n/2;
+        }else{
+           temp=n/2;
+           temp=temp+1;
+    }
+    }
+    int money=temp*k;
+    cout<<"number of houses that can be robbed:"<<temp;
+    cout<<"money that can be robbed:"<<money;
+    return 0;
+}
